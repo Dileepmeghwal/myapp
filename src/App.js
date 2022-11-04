@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import GlobalInstance from './Components/GlobalInstance';
+import Header from './Components/Header';
+import Mystor from './Components/Mystor';
+import Post from './Components/Post';
+import PostReq from './Components/PostReq';
+import './Components/axios/global'
+import ProductsList from './Components/axios-fetch/ProductsList';
+import GetCountry from './Components/axios/GetCountry';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>App</h1>
+
+      {/* <Post/> */}
+      {/* <Header/> */}
+      {/* <PostReq/> */}
+      {/* <GlobalInstance/> */}
+      {/* <ProductsList/> */}
+      {/* <Mystor/> */}
+      <GetCountry/>
     </div>
   );
 }
